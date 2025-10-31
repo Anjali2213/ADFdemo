@@ -7,13 +7,41 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adf01practice"
 		},
+		"GitHub1_credential": {
+			"type": "secureString",
+			"metadata": "Secure string for 'credential' of 'GitHub1'"
+		},
 		"LSadls_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LSadls'"
 		},
+		"linkedservice_DL_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'linkedservice_DL'"
+		},
+		"GitHub1_properties_typeProperties_username": {
+			"type": "string",
+			"defaultValue": "Anjali2213"
+		},
+		"LS_git_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com"
+		},
 		"LSadls_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adls02today.dfs.core.windows.net/"
+		},
+		"linkedservice_DL_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://sa01databricks.dfs.core.windows.net/"
+		},
+		"man_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/214c5e44-8c02-4901-89f1-c0cf0da74b5d/resourceGroups/databricks/providers/Microsoft.Storage/storageAccounts/sa01databricks"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/214c5e44-8c02-4901-89f1-c0cf0da74b5d/resourceGroups/databricks/providers/Microsoft.Storage/storageAccounts/sa01databricks"
 		},
 		"containerUri": {
 			"type": "string",
@@ -42,11 +70,32 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"GitHub1_credential": {
+						"value": "[parameters('GitHub1_credential')]"
+					},
 					"LSadls_accountKey": {
 						"value": "[parameters('LSadls_accountKey')]"
 					},
+					"linkedservice_DL_accountKey": {
+						"value": "[parameters('linkedservice_DL_accountKey')]"
+					},
+					"GitHub1_properties_typeProperties_username": {
+						"value": "[parameters('GitHub1_properties_typeProperties_username')]"
+					},
+					"LS_git_properties_typeProperties_url": {
+						"value": "[parameters('LS_git_properties_typeProperties_url')]"
+					},
 					"LSadls_properties_typeProperties_url": {
 						"value": "[parameters('LSadls_properties_typeProperties_url')]"
+					},
+					"linkedservice_DL_properties_typeProperties_url": {
+						"value": "[parameters('linkedservice_DL_properties_typeProperties_url')]"
+					},
+					"man_properties_typeProperties_scope": {
+						"value": "[parameters('man_properties_typeProperties_scope')]"
+					},
+					"trigger1_properties_typeProperties_scope": {
+						"value": "[parameters('trigger1_properties_typeProperties_scope')]"
 					}
 				}
 			},
