@@ -1,16 +1,16 @@
 {
-	"name": "DS_sink",
+	"name": "DS_rest_api",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "linkedservice_DL",
+			"referenceName": "LS_git",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobFSLocation",
-				"fileSystem": "destination"
+				"type": "HttpServerLocation",
+				"relativeUrl": "Anjali2213/ADFdemo/refs/heads/main/orders_day2.csv"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
