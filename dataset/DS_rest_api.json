@@ -1,0 +1,22 @@
+{
+	"name": "DS_rest_api",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_git",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "Anjali2213/ADFdemo/refs/heads/main/orders_day2.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
