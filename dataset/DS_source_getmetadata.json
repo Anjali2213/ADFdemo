@@ -1,10 +1,6 @@
 {
 	"name": "DS_source_getmetadata",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "linkedservice_DL",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
