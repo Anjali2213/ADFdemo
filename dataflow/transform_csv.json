@@ -14,10 +14,6 @@
 			],
 			"sinks": [
 				{
-					"dataset": {
-						"referenceName": "DS_data_flow_sink",
-						"type": "DatasetReference"
-					},
 					"name": "sink1"
 				}
 			],
@@ -62,19 +58,10 @@
 				"splitcsv@otherthanMonitor alterRow(insertIf(Quantity==3)) ~> alterRow1",
 				"alterRow1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     input(",
-				"          OrderID as string,",
-				"          Customer as string,",
-				"          Item as string,",
-				"          Quantity as string,",
-				"          Price as string,",
-				"          OrderDate as string",
-				"     ),",
-				"     umask: 0022,",
-				"     preCommands: [],",
-				"     postCommands: [],",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> sink1"
+				"     skipDuplicateMapOutputs: true,",
+				"     preCommands: [],",
+				"     postCommands: []) ~> sink1"
 			]
 		}
 	}
