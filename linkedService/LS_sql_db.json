@@ -6,12 +6,12 @@
 		"type": "AzureSqlDatabase",
 		"typeProperties": {
 			"server": "db01advanced.database.windows.net",
-			"database": "master",
+			"database": "db01advanced",
 			"encrypt": "optional",
 			"trustServerCertificate": false,
 			"authenticationType": "SQL",
 			"userName": "db01advanced@db01advanced",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEUzQ0Q5OTMxLTU2QkQtNDc5Ny1CNkRGLTExNzBCMDNGRTBDQ185MTllMGQxMy1kZmMwLTQ0MzQtYTQ4MC01MjQ2ZWNhZGZhYTMiDQp9"
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEUzQ0Q5OTMxLTU2QkQtNDc5Ny1CNkRGLTExNzBCMDNGRTBDQ180MTBhY2E1MS01ZmY0LTQzM2MtYTUwMy1hMmNiMGMyYWU3ODgiDQp9"
 		}
 	}
 }
